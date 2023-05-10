@@ -59,7 +59,7 @@ const NoteState = (props) => {
     //API CALL
 
     const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
-      method: "POST",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
         "auth-token":
@@ -70,14 +70,17 @@ const NoteState = (props) => {
     const json = response.json();
 
     //logic to edit in client
+    let newNotes = JSON.parse(JSON.stringify(notes));
     for (let index = 0; index < notes.length; index++) {
       const element = notes[index];
       if (element._id === id) {
-        element.title = title;
-        element.description = description;
-        element.tag = tag;
+        newNotes[index].title = title;
+        newNotes[index].description = description;
+        newNotes[index].tag = tag;
+        break;
       }
     }
+    getNotes(newNotes);
   };
 
   //DELETE A NOTE
@@ -96,7 +99,7 @@ const NoteState = (props) => {
     }); 
 
     const json = response.json();   
-    console.log("deleting the note with id" + id);
+    // console.log("deleting the note with id" + id);
     const newNotes = notes.filter((note) => {
       return note._id !== id;
     });
