@@ -31,7 +31,7 @@ router.post(
         if (user) {
           return res
             .status(400)
-            .json({ sucesss, error: "Sorry the user with same email already exists" });
+            .json({ success, error: "Sorry the user with same email already exists" });
         }
 
         const salt = await bcrypt.genSalt(10);
