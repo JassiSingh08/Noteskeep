@@ -28,6 +28,8 @@ const Signup = (props) => {
       props.showAlert("Account Created Successfully","success")
 
     } else {
+      // props.showAlert("Invalid Credentials","danger");
+      // console.log(json)
       props.showAlert("Invalid Credentials","danger")
     }
   }
@@ -56,7 +58,7 @@ const Signup = (props) => {
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">Name</label>
-        <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
+        <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" required />
 
         <label htmlFor="email" className="form-label">Email address</label>
         <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" required/>

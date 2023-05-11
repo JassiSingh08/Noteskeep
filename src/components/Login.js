@@ -34,7 +34,7 @@ const Login = (props) => {
     }
 
     const navtoSign = () => {
-        navigate("/Signup");
+        navigate("/signup");
     }
 
     return (
