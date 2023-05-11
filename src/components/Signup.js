@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Signup = () => {
+const Signup = (props) => {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" });
 
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
 
     //destructuring 
@@ -24,23 +25,34 @@ const Signup = () => {
       //Save the auth token and redirect 
       localStorage.setItem("token", json.authToken);
       navigate("/"); 
+      props.showAlert("Account Created Successfully","success")
 
     } else {
-      alert("INVALID CREDENTIALS");
+      props.showAlert("Invalid Credentials","danger")
     }
   }
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   };
 
+  // const checkpassword = (e) =>{
+  //   let password = document.getElementById("password");
+  //   let Cpassword = document.getElementById("cpassword");
+
+  //   if(password !== Cpassword){
+  //     props.showAlert("Passwords do not match","danger")
+  //     e.preventDefault()
+  //   }
+  // }
+
   return (
-    <div><form onSubmit={handleSubmit}>
+    <div className='my-3'><form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">Name</label>
         <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp" />
 
         <label htmlFor="email" className="form-label">Email address</label>
-        <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" />
+        <input type="email" className="form-control" id="email" name='email' onChange={onChange} aria-describedby="emailHelp" required/>
 
         <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
       </div>
@@ -52,7 +64,7 @@ const Signup = () => {
         <label htmlFor="cpassword" className="form-label">Confirm Password</label>
         <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} required minLength={5}/>
       </div>
-      <button type="submit" className="btn btn-primary">Submit</button>
+      <button type="submit" className="btn btn-primary" /* onClick={checkpassword} */ >Submit</button>
     </form></div>
   )
 }
