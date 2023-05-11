@@ -5,7 +5,7 @@ const About = () => {
     <figure>
       <blockquote class="blockquote">
         <p>
-          Welcome to iNotebook web app!
+          Welcome to Noteskeep web app!
           <br />
           Our app is designed to make it easy for you to store and access your
           notes from anywhere, at any time. <br /> With our app, you no longer
@@ -23,12 +23,12 @@ const About = () => {
           This means you can work on your notes wherever and whenever
           inspiration strikes. <br />
           <br />
-          Thank you for choosing iNotebook web app. We hope you find it useful
+          Thank you for choosing Noteskeep web app. We hope you find it useful
           and enjoyable to use!
         </p>
       </blockquote>
       <figcaption class="blockquote-footer">
-       <cite title="Source Title">iNotebook</cite>
+       <cite title="Source Title">Noteskeep</cite>
       </figcaption>
     </figure>
   );

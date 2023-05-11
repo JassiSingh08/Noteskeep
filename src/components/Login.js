@@ -33,9 +33,13 @@ const Login = (props) => {
 
     }
 
+    const navtoSign = () => {
+        navigate("/Signup");
+    }
+
     return (
         <div className='my-2'>
-            <h2>Login to continue to iNotebook</h2>
+            <h2>Login to continue to Noteskeep</h2>
             <form onSubmit={handleSubmit} >
                 <div className="mb-3 my-3">
                     <label htmlFor="email" className="form-label">Email address</label>
@@ -46,8 +50,9 @@ const Login = (props) => {
                     <input type="password" className="form-control" id="password" value={credentials.password} name='password' onChange={onChange} />
                 </div>
 
-                <button type="submit" className="btn btn-primary" >Submit</button>
+                <button type="submit" className="btn btn-primary" >Let me in.</button>
             </form>
+            <h6 className='my-4'>Not have an account? <span style={{cursor: 'pointer', textDecoration:"underline"}} onClick={navtoSign}>Create Here. </span></h6> 
         </div>
     )
 }

@@ -35,6 +35,11 @@ const Signup = (props) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   };
 
+  const navtoLogin = () => {
+    navigate("/login");
+}
+
+
   // const checkpassword = (e) =>{
   //   let password = document.getElementById("password");
   //   let Cpassword = document.getElementById("cpassword");
@@ -47,7 +52,7 @@ const Signup = (props) => {
 
   return (
     <div className='my-3'>
-       <h2 className='my-3 '>Create an Account to use iNotebook</h2>
+       <h2 className='my-3 '>Create an Account to use Noteskeep</h2>
       <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">Name</label>
@@ -66,8 +71,11 @@ const Signup = (props) => {
         <label htmlFor="cpassword" className="form-label">Confirm Password</label>
         <input type="password" className="form-control" id="cpassword" name='cpassword' onChange={onChange} required minLength={5}/>
       </div>
-      <button type="submit" className="btn btn-primary" /* onClick={checkpassword} */ >Submit</button>
-    </form></div>
+      <button type="submit" className="btn btn-primary" /* onClick={checkpassword} */ >Create Account</button>
+    </form>
+    <h6 className='my-4'>Already have an Account? <span style={{cursor: 'pointer', textDecoration:"underline"}} onClick={navtoLogin}>Login Here. </span></h6> 
+
+    </div>
   )
 }
 
