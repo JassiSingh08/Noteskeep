@@ -17,9 +17,15 @@ Here're some of the project's best features:
 *   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/65de6b48-62ed-4a46-809d-fdc0b121ba4b)
 
 *   Implemented a robust API to handle CRUD operations for note management in the Node.js project. Users can easily add new notes by sending a POST request to the appropriate endpoint. The note is securely stored in the database and associated with the user's account.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/4bea8768-fb13-4a23-b9c2-54db949bf934)
+
 *   A feature to view all notes is provided allowing users to retrieve and see a comprehensive overview of their saved information. Incorporated functionality to update existing notes enabling users to modify and refine their note content as needed. Users can send a PUT request to update a specific note.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/80d3afc7-167e-4caa-9120-5a79da416f4b)
+
 *   Ensured the safety and privacy of user data by implementing a delete operation for notes. Users can send a DELETE request to remove a specific note from their collection.
 *   Enhanced user experience by providing alert messages for successful operations such as user registration login note addition and updates or deletions. Ensured security by implementing a session-based approach requiring users to log back in after logging out to prevent unauthorized access.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/a7109709-a66e-4bc0-a038-2667163d2242)
+
 
   
   
