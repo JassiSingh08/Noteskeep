@@ -1,72 +1,38 @@
-# 
+<h1 align="center" id="title">NotesKeep - Your Notes on the GO!</h1>
 
-Getting Started with Create React App
+<p id="description">Developed a secure Node.js project with JSON Web Token (JWT) authentication for user registration login and session management. Integrated user authentication with appropriate hashing algorithms and encryption techniques to ensure data privacy and security. Implemented token-based authorization for accessing CRUD (Create Read Update Delete) operations on notes.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>🚀 Demo</h2>
 
-## Available Scripts
+[https://www.loom.com/share/f8a56abf6b134ac59bfc36da8f89139b](https://www.loom.com/share/f8a56abf6b134ac59bfc36da8f89139b)
 
-In the project directory, you can run:
+  
+  
+<h2>🧐 Features</h2>
 
-### `npm start`
+Here're some of the project's best features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   Designed and implemented a secure authentication system using JSON Web Tokens (JWT) to enable user registration login and session management. Users can securely create an account by providing their credentials and upon successful registration a unique JWT is generated and sent back to the client. Integrated advanced hashing algorithms and encryption techniques to securely store user passwords in the database. Token-based authentication allows users to access protected routes and perform CRUD operations on their notes.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/663dafa8-6d1d-42f7-b6db-96f2fab5c499)
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/65de6b48-62ed-4a46-809d-fdc0b121ba4b)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   Implemented a robust API to handle CRUD operations for note management in the Node.js project. Users can easily add new notes by sending a POST request to the appropriate endpoint. The note is securely stored in the database and associated with the user's account.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/4bea8768-fb13-4a23-b9c2-54db949bf934)
 
-### `npm test`
+*   A feature to view all notes is provided allowing users to retrieve and see a comprehensive overview of their saved information. Incorporated functionality to update existing notes enabling users to modify and refine their note content as needed. Users can send a PUT request to update a specific note.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/80d3afc7-167e-4caa-9120-5a79da416f4b)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*   Ensured the safety and privacy of user data by implementing a delete operation for notes. Users can send a DELETE request to remove a specific note from their collection.
+*   Enhanced user experience by providing alert messages for successful operations such as user registration login note addition and updates or deletions. Ensured security by implementing a session-based approach requiring users to log back in after logging out to prevent unauthorized access.
+*   ![image](https://github.com/JassiSingh08/Noteskeep/assets/125473833/a7109709-a66e-4bc0-a038-2667163d2242)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
+  
+<h2>💻 Built with</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Technologies used in the project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   Node.js
+*   Mongodb
+*   React.js
