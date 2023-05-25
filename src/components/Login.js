@@ -24,7 +24,7 @@ const Login = (props) => {
         if (json.success) {
             //Save the auth token and redirect 
             localStorage.setItem("token", json.authToken);
-            props.showAlert("Logged In Successfully","success");
+            props.showAlert("LogIn Successfully","success");
             navigate("/"); 
 
         } else {
@@ -50,9 +50,9 @@ const Login = (props) => {
                     <input type="password" className="form-control" id="password" value={credentials.password} name='password' onChange={onChange} />
                 </div>
 
-                <button type="submit" className="btn btn-primary" >Let me in.</button>
+                <button type="submit" className="btn btn-primary login" >Let me in.</button>
             </form>
-            <h6 className='my-4'>Not have an account? <span style={{cursor: 'pointer', textDecoration:"underline"}} onClick={navtoSign}>Create Here. </span></h6> 
+            <h6 className='my-4 forgot'>Not have an account? <span style={{cursor: 'pointer', textDecoration:"underline"}} onClick={navtoSign}>Create Here. </span></h6> 
         </div>
     )
 }
